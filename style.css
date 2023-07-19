@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background1.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-box{
+    background: #ff574a;
+    text-align: center;
+    padding: 10px 30px;
+    color: #fff;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(244, 67, 54, 0.5);
+}
+
+
+.profile-pic{
+    width: 200px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 6px;
+    margin-top: -110px;
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.5);
+    transition: 0.4s;
+}
+
+.profile-bottom{
+    background: #e3edf7;
+    padding: 40px 0;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-bottom: -120px;
+    border-radius: 20px;
+    margin-top: -10px;
+}
+
+/*--------------Social-Media------------*/
+.profile-bottom h1{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    letter-spacing: 4px;
+    padding: 1px 0 20px;
+    color: #555;
+    text-align: center;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    display: flex;
+    background: #e3edf7;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0,01);
+    transition: transform 0.5s;
+}
+
+
+a .facebook{
+    height: auto;
+    width: 25px;
+    transition: transform 0.5s;
+}
+a .twitter{
+    height: auto;
+    width: 25px;
+    transition: transform 0.5s;
+}
+a .linkedin{
+    height: auto;
+    width: 25px;
+    transition: transform 0.5s;
+}
+a .github{
+    height: auto;
+    width: 25px;
+    transition: transform 0.5s;
+}
+
+a:hover{
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transform: translateX(6px);
+}
+
+a:hover img{
+    transform: scale(1.9);
+}
+
+
+/*--------------Social-Media-End-----------*/
+
+
+.profile-box button{
+    background: #ff574a;
+    border: 2px solid #e3edf7;
+    color: white;
+    padding: 15px 60px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: -50px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.4s;
+}
+.profile-box button:hover{
+    background: #e3edf7;
+    color: #ff574a;
+    border: 2px solid #ff574a;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+.profile-box h3{
+    font-size: 32px;
+    font-style: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+
+
+
+/*------------------ about page------------------ */
+.popup{
+    width: 80%;
+    background-color: #ff574a;
+    background-size: cover;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    padding: 0 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transition: transform 0.9s, top 0.9s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup img{
+    height: auto;
+    width: 300px;
+    border-radius: 50%;
+    border-color: #fff;
+    background: #fff;
+    margin-right: 50px;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 63px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 19px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+
+.about-text p{
+    color: white;
+    line-height: 19px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-bottom: 45px;
+}
+
+
+
+.btn{
+    background: #ff574a;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 250px;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.btn:hover{
+    background: #fff;
+    border: 2px solid #f9004d;
+    color: #ff574a;
+    cursor: pointer;
+}
+
+/*------------------ about page end------------------ */
+
+
+
+
+
+
+
+
+
+
+/*------------------ media-queries-for-small-screen------------------ */
+@media only screen and (max-width: 600px){
+    
+    .profile-box{
+        padding: 10px 10px;
+        width: 80%;
+    }
+
+    .profile-pic{
+        width: 140px;
+        margin-top: -80px;
+    }
+
+    .profile-box button{
+        font-size: 13px;
+    }
+
+    .profile-box h3{
+        font-size: 25px;
+    }
+
+    .profile-box p{
+        font-size: 9px;
+    }
+
+    .profile-bottom h1{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .profile-bottom{
+            padding: 30px 0;
+            margin-right: -30px;
+            margin-left: -30px;
+    }
+
+    .profile-bottom img{
+        margin-bottom: -20px;
+    }
+}

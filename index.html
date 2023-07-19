@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Digital Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wgt@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-box">
+            <img src="images/profile-pic0.jpg" class="profile-pic">
+            <h3>Peter Thapelo Matlhasi</h3>
+            <p>Software Engineering Trainee at ALX Africa | Back-End Developer</p>
+            <p>Graphic Designer | Electrical Engineering-Computer Systems</p>
+
+            <button type="button" onclick="openPopup()">Learn More About Me</button>
+            <div class="profile-bottom">
+                <h1>Follow me on social media</h1>
+
+<!--------------------Social-Media---------------->
+
+                <div class="social-media">
+                    <a href="https://www.facebook.com/peter.thapelo.matlhasi"><img src="images/Facebook1.png" class="facebook"></a>
+                    <a href="#"><img src="images/Twitter1.png" class="twitter"></a>
+                    <a href="https://www.linkedin.com/in/peter-thapelo-matlhasi-47bb93124"><img src="images/LinkedIn1.png" class="linkedin"></a>
+                    <a href="#"><img src="images/Github1.png" class="github"></a>
+                </div>
+
+<!--------------------Social-Media-end---------------->
+                
+            </div>
+
+        </div>
+    </div>
+
+<!--------------------About-Me-------------------->
+<div class="popup" id="popup">
+    <div class="main">
+        <img src="images/profile-pic0.jpg">
+        <div class="about-text">
+            <h1>About Me</h1>
+            <h5>Software Engineering Trainee at ALX Africa | Back-End Developer | Graphic Designer | Electrical Engineering-Computer Systems</h5>
+            <p>
+                Passionate Software Engineering Trainee with a strong foundation in programming and problem-solving.
+                Eager to leverage my technical skills and enthusiasm for cutting-edge technologie
+                to contribute to innovative software solutions. I am actively seeking opportunities to learn, kick-start my career and make a positive impact in the software industry.
+
+                </br></br>Technical Proficiencies:
+                </br>Programming Languages: Java, C, Python | Web Technologies: HTML, CSS, JavaScript 
+                | Databases: MySQL, SQL | Version Control: Git, GitHub | Software Development Tools: Visual Studio Code 
+                | Operating Systems: Windows, Linux
+                
+                </br></br>Professional Interests:
+                </br>Full-stack development, web application development, and software engineering best practice.
+                Artificial Intelligence and Machine Learning. Continuous integration and deployment (CI/CD).
+                Agile project management methodologies
+                
+                </br></br>Let's Connect: Open to exciting software opportunities. Feel free to reach out at matlhasipt95@gmail.com or connect on LinkedIn.
+                Excited to contribute my skills and enthusiasm to impactful software projects and be a part of dynamic teams. Let's connect and explore opportunities together!
+            </p>
+            <button type="button" class="btn" onclick="closePopup()">Back</button>
+          <!--  <button type="button" class="btn">Let's Connect</button> -->
+        </div>
+    </div>
+</div>
+<!--------------------About-Me-end-------------------->
+
+
+
+
+<script>
+    let popup = document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+</script>
+
+</body>
+</html>
