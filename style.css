@@ -246,21 +246,125 @@ a:hover img{
 
 
 
-/*------------------ media-queries-for-small-screen------------------ */
-@media only screen and (max-width: 600px){
+/*------------------ media-queries------------------ */
+@media only screen and (max-width: 1150px) and (orientation: landscape){
     
     .profile-box{
-        padding: 10px 10px;
-        width: 80%;
+        padding: 0px 50px;
+        width: 75%;
+    }
+
+    .profile-bottom{
+        background: #e3edf7;
+        padding: 0px 90px;
+        margin-right: -10px;
+        margin-left: -10px;
+        margin-bottom: -100px;
+        border-radius: 20px;
+        margin-top: -20px;
     }
 
     .profile-pic{
         width: 140px;
-        margin-top: -80px;
+        margin-top: -50px;
     }
 
     .profile-box button{
         font-size: 13px;
+        padding: 10px 40px;
+        margin-bottom: 0px;
+    }
+
+    .profile-box h3{
+        font-size: 30px;
+    }
+
+    .profile-box p{
+        font-size: 13px;
+    }
+
+    .profile-bottom h1{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .profile-bottom{
+            padding: 30px 0;
+            margin-right: -30px;
+            margin-left: -30px;
+    }
+
+    .profile-bottom img{
+        margin-bottom: -20px;
+    }
+
+    a{
+        height: 20px;
+        width: 20px;
+    }
+
+    a .facebook{
+        margin-bottom: 0px;
+    }
+    a .twitter{
+        margin-bottom: 0px;
+    }
+    a .linkedin{
+        margin-bottom: 0px;
+    }
+    a .github{
+        margin-bottom: 0px;
+    }
+
+    .popup{
+        width: 96%;
+        display: block;
+    
+    }
+
+    .main{
+        display: block;
+    }
+
+
+
+    .about-text h1{
+        font-size: 30px;
+        margin-top: 5px;
+    margin-bottom: 5px;
+    }
+    .about-text h5{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .about-text p{
+        font-size: 10px;
+        margin-bottom: 20px;
+        line-height: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 1150px) and (orientation: portrait){
+    
+    .profile-box{
+        padding: 10px 20px;
+        width: 80%;
+    }
+
+    .profile-pic{
+        width: 70%;
+    }
+
+    .popup img{
+        width: 40%;
+        margin-top: 9px;
+    }
+
+    .profile-box button{
+        font-size: 8px;
+        padding: 15px 40px;
     }
 
     .profile-box h3{
@@ -285,4 +389,55 @@ a:hover img{
     .profile-bottom img{
         margin-bottom: -20px;
     }
+
+    a .facebook{
+        margin-bottom: 0px;
+        width: 20%;
+    }
+    a .twitter{
+        margin-bottom: 0px;
+    }
+    a .linkedin{
+        margin-bottom: 0px;
+    }
+    a .github{
+        margin-bottom: 0px;
+    }
+
+    .popup{
+        width: 96%;
+        display: block;
+    
+    }
+
+    .main{
+        display: block;
+    }
+
+    .about-text h1{
+        font-size: 30px;
+        margin-top: 5px;
+    margin-bottom: 5px;
+    }
+    .about-text h5{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .about-text p{
+        font-size: 10px;
+        margin-bottom: 20px;
+        line-height: 12px;
+    }
+
+
+    .btn{
+        background: #ff574a;
+        padding: 6px 25px;
+    }
+    
+
+
+
+
 }
